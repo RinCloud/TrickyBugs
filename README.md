@@ -1,7 +1,7 @@
 # TrickyBugs Dataset
 This is TrickyBugs, a dataset of corner-case bugs in plausible programs. TrickyBugs contains 3,043 human-written buggy programs from 324 real-world competition coding tasks. Please refer to the attached papers `Who Judges the Judge: An Empirical Study on Online Judge Tests` and `TrickyBugs: A Dataset of Corner-case Bugs in Plausible Programs` for more details.
 
-To start with your exploration of the bugs, please first download all the files in this repo and put them in the same directory. Then download the `problems.tar.gz` file from link below:  
+To start with your exploration of the bugs, please first download all the files in this repo and put them in the same directory. Then download the `problems.tar.gz` file from the link below:  
 
 - **OneDrive**: [Download from OneDrive](https://1drv.ms/u/s!AqF1ATQsra1GilsYGQG9iRX98aq2)
 
