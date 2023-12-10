@@ -43,7 +43,7 @@ To run the programs in the directory, we recommend the following environment:
 
 # Getting Started
 
-Here is a detailed example to show how to use our dataset. 
+Here is a detailed example to get familiar with the bugs :-)
 
 For example, open a directory `./problems/p04005`, the description of the coding task is shown in `./problems/p04005/problem_description.txt`:
 
