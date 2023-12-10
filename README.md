@@ -20,8 +20,7 @@ The `problems` directory contains root directories of each coding task, an each 
 
 The root directory of each coding task contains the following files and subdirectories:
 
-- `buggy_programs`: A directory. This directory contains all the buggy plausible programs we found, with different programming languages (C++, Java, or Python) each included in a separate subdirectory. In order to facilitate automated execution, each source code in Java is placed in its own separate subsubdirectory.
-
+- `buggy_programs`: A directory. This directory contains all the buggy plausible programs we found. Programs in different programming languages (C++, Java, or Python) are included in separate subdirectories. 
 - `reference_programs`: A directory. This directory contains reference programs in C++. A reference program always produces the major output for any test input throughout the process of our differential testing. Reference programs are considered correct. We provide multiple reference programs (up to five) because they can be used for preliminary verification of the validity of an input. Specifically, for any given test input, if all reference programs produce the same output, then this test input is likely valid. Otherwise, it is highly probable to be invalid.
   
 - `fixed_programs` (optional): A directory. This directory contains the fixed version of some buggy plausible programs. These fixed programs are useful for fault localization. It's important to note that many bugs in TrickyBugs originate from logical corner cases. Therefore, the differences between the buggy program and its fixed version may not be limited to just one line but could involve multiple lines. Not every buggy program has a fixed version, and 224 out of 324 root directories of coding tasks contain this subdirectory.
