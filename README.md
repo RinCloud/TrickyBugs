@@ -137,12 +137,13 @@ Type command `oj --version` to confirm that the online-judge-tools has been inst
 
 Then use our script for testing. Run the `main.py` with two arguments:
 - `--program`: The complete path of the program to be tested.
-- `--test_dir`: The complete path of the directory that contains test inputs and test outputs. The spaces and newlines will be ignored. The test cases in the dir should be named as "1.in" "1.out" "2.in" "2.out" .... Put all the `*.in` and `*.out` files in this directory and ensure that they correspond one-to-one.
+- `--test_dir`: The complete path of the directory that contains test inputs and test outputs. The test cases in the dir should be named as "1.in" "1.out" "2.in" "2.out" .... Put all the `*.in` and `*.out` files in this directory and ensure that they correspond one-to-one. 
 
-Let us look at a example, if the root directory is `TrickyBugs/`, first ensure that we have the `TrickyBugs/problems/` directory by downloading and unzipping the `problems.tar.gz`. and then we run the command:
+Let us look at the example, if the root directory is `TrickyBugs/`, first ensure that the `TrickyBugs/problems/` exists, else please download and unzip the `problems.tar.gz`. And then we run the command:
 
 ```console
 $ python TrickyBugs/main.py --program=/TrickyBugs/problems/p04005/buggy_programs/python/sol_65.py --test_dir=/TrickyBugs/problems/p04005/additional_test_cases
+
 Start Testing...
 Program Under Test: ./problems/p04005/buggy_programs/python/sol_65.py
 Test Cases Directory: ./problems/p04005/additional_test_cases
@@ -150,7 +151,7 @@ Test Results:
 test1: WA
 test31: AC
 ```
-OK! We know that `sol_65.py` of `p04005` fails on the additional test case `test1`, which means that when it is fed with `test1.in`, the output is different with `test1.out` (The spaces and newlines are ignored by default). 
+OK! We know that `sol_65.py` of `p04005` fails on the additional test case `test1` (`test1.in` and `test1.out`), which means that when it is fed with `test1.in`, the output is different with `test1.out` (The spaces and newlines are ignored by default).
 
 You can also use `--verbose` argument to get more details:
 ```console
