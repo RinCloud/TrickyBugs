@@ -112,7 +112,7 @@ The description of the problem requests us to divide a cuboid with A x B x C blo
 0
 ```
 
-but when we submit the solution `sol_65.py` in the [Atcoder custom test](https://atcoder.jp/contests/agc004/custom_test) and enter the `test1.in` as input, we get the a wrong output:
+but when we submit the solution `sol_65.py` in the [Atcoder custom test](https://atcoder.jp/contests/agc004/custom_test) and enter the `test1.in` as input, we get a wrong output:
 
 ```
 268365482890388312
