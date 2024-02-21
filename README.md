@@ -1,7 +1,9 @@
 # TrickyBugs Dataset
-This is TrickyBugs, a dataset of corner-case bugs in plausible programs. TrickyBugs contains 3,043 human-written buggy programs from 324 real-world competition coding tasks. Please refer to the attached papers `Who Judges the Judge: An Empirical Study on Online Judge Tests` and `TrickyBugs: A Dataset of Corner-case Bugs in Plausible Programs` for more details.
+This is TrickyBugs, a dataset of corner-case bugs in plausible programs. TrickyBugs contains 3,043 human-written buggy programs from 324 real-world competition coding tasks. More details can be found in papers `Who Judges the Judge: An Empirical Study on Online Judge Tests` and `TrickyBugs: A Dataset of Corner-case Bugs in Plausible Programs`.
 
-To start with your exploration of the bugs, please first download all the files in this repo and put them in the same directory. Then download the `problems.tar.gz` file from the link below:  
+You can also access TrickyBugs in  [Zenodo](https://doi.org/10.5281/zenodo.7977255).
+
+To start with your exploration of the bugs, please first download all the files in this repo and put them in the same directory. Then download the `problems.tar.gz` file from the link below:
 
 - **OneDrive**: [Download from OneDrive](https://1drv.ms/u/s!AqF1ATQsra1GilsYGQG9iRX98aq2)
 
@@ -36,7 +38,7 @@ The root directory of each coding task contains the following files and subdirec
 
 # An Example
 
-Here is a detailed example to get familiar with the bugs :-)
+Here is a detailed example to get familiar with the plausible programs and corner-case bugs.
 
 For example, open a directory `./problems/p04005`, the description of the coding task is shown in `./problems/p04005/problem_description.txt`:
 
@@ -112,7 +114,7 @@ The description of the problem requests us to divide a cuboid with A x B x C blo
 0
 ```
 
-but when we submit the solution `sol_65.py` in the [Atcoder custom test](https://atcoder.jp/contests/agc004/custom_test) and enter the `test1.in` as input, we get the a wrong output:
+but when we submit the solution `sol_65.py` in the [Atcoder custom test](https://atcoder.jp/contests/agc004/custom_test) and enter the `test1.in` as input, we get a wrong output:
 
 ```
 268365482890388312
@@ -202,3 +204,37 @@ sys_test7: AC
 sys_test8: AC
 ```
 `sol_65.py` can pass all original test cases.
+
+# Citation
+
+Please cite the two papers below if you wish to use TrickyBugs dataset.
+
+```
+@inproceedings{liu2023oj,
+author = {Liu, Kaibo and Han, Yudong and Zhang, Jie M. and Chen, Zhenpeng and Sarro, Federica and Harman, Mark and Huang, Gang and Ma, Yun},
+title = {Who Judges the Judge: An Empirical Study on Online Judge Tests},
+year = {2023},
+isbn = {9798400702211},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3597926.3598060},
+doi = {10.1145/3597926.3598060},
+booktitle = {Proceedings of the 32nd ACM SIGSOFT International Symposium on Software Testing and Analysis},
+pages = {334–346},
+numpages = {13},
+series = {ISSTA 2023}
+}
+```
+
+```
+@inproceedings{liu2024trickybugs,
+author = {Liu, Kaibo and Han, Yudong and and Liu, Yiyang and Zhang, Jie M. and Chen, Zhenpeng and Sarro, Federica and Huang, Gang and Ma, Yun},
+title = {TrickyBugs: A Dataset of Corner-case Bugs in Plausible Programs},
+year = {2024},
+doi = {10.1145/3643991.3644870},
+booktitle = {Proceedings of the 21st International Conference on Mining Software Repositories},
+keywords = {software testing, test generation, test adequacy, program repair, benchmark},
+series = {MSR 2024}
+}
+```
+
